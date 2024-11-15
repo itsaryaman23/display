@@ -12,10 +12,10 @@ function App() {
       }}>
         <h1>Full Name Display</h1>
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" required/>
+        <input type="text" pattern="[A-Za-z]+" id="firstName" required oninvalid="setCustomValidity('Enter alphabets only')" />
         <br />
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" required/>
+        <input type="text" pattern="[A-Za-z]+" id="lastName" required oninvalid="setCustomValidity('Enter alphabets only')" />
         <br />
         <button type="submit">Submit</button>
         <p id="fullName"></p>
