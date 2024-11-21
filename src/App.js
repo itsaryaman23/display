@@ -9,12 +9,15 @@ function App() {
           e.preventDefault();
           // console.log(e);
           // document.getElementById("fullName").innerText = `Full Name: ${e.target.elements.firstName.value} ${e.target.elements.lastName.value}`;
-          if (e.target.elements.firstName && e.target.elements.lastName)
-            document
-              .querySelector("form")
-              .append(
-                `<p>FullName: ${e.target.elements.firstName.value} ${e.target.elements.lastName.value}</p>`
-              );
+          const p = document.createElement('p');
+          if (e.target.elements.firstName.value && e.target.elements.lastName.value)
+          {
+
+            // document.createTextNode("Hi");
+            console.log(e.target.elements.fullName)
+            p.append(document.createTextNode(`Full Name: ${e.target.elements.firstName.value} ${e.target.elements.lastName.value}`));
+            document.querySelector('form').append(p);
+          }
         }}
       >
         <h1>Full Name Display</h1>
