@@ -13,13 +13,13 @@ function App() {
         <h1>Full Name Display</h1>
         <label for="firstName">First Name:</label>
         <input type="text" 
-        pattern="[A-Za-z]+" 
-        id="firstName" name="firstName" required />
+        // pattern="[A-Za-z]+" 
+        id="firstName" name="firstName"  />
         <br />
         <label for="lastName">Last Name:</label>
         <input type="text" 
-        pattern="[A-Za-z]+" 
-        id="lastName" name="lastName" required />
+        // pattern="[A-Za-z]+" 
+        id="lastName" name="lastName"  />
         <br />
         <button type="submit">Submit</button>
       </form>
