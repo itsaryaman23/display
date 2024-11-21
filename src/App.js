@@ -7,6 +7,7 @@ function App() {
       <form onSubmit={(e)=>{
         e.preventDefault();
         // console.log(e);
+        if(e.target.elements.firstName && e.target.elements.lastName)
         document.getElementById("fullName").innerText = `Full Name: ${e.target.elements.firstName.value} ${e.target.elements.lastName.value}`;
 
       }}>
