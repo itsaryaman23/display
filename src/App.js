@@ -16,7 +16,7 @@ function App() {
             // document.createTextNode("Hi");
             console.log(e.target.elements.fullName)
             p.append(document.createTextNode(`Full Name: ${e.target.elements.firstName.value} ${e.target.elements.lastName.value}`));
-            document.querySelector('form').append(p);
+            document.querySelector('.a').append(p);
           }
         }}
       >
